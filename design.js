@@ -1,10 +1,10 @@
 function showImage(functionName) {
     const imageMap = {
-      login: "images/login.jpg",
-      register: "images/login.jpg",
+      login: "images/Login.jpg",
+      register: "images/Login.jpg",
       forgot_pass: "images/PaswordRecovery.jpg",
-      course_management: "images/courses.jpg",
-      study_notes: "images/notes.jpg",
+      course_management: "images/Courses.jpg",
+      study_notes: "images/Notes.jpg",
       track_progress: "images/Progess.jpg",
       tests: "images/TakeTest.jpg",
       community: "images/CommunityDiscusson.jpg",

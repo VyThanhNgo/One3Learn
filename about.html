@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Language Learning</title>
-  <link rel="stylesheet" href="index.css">
+  <title>About Us</title>
+  <link rel="stylesheet" href="about.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="image/favicon.ico" type="image/x-icon">
 </head>
 <body>
   <div class="header">
@@ -27,9 +27,9 @@
     <!-- Right Side: Community, Contact, Log in, Sign up, Language Selector -->
     <div class="nav-right">
       <a href="#contact">Contact</a>
-      <a href="#" class="log-in" id="login-btn">Log In</a>
-      <a href="#" class="sign-up" id="signup-btn">Sign Up</a>
-
+      <a href="#login" class="log-in">Log In</a>
+      <a href="#sign-up" class="sign-up">Sign Up</a>
+      
       <!-- Language Selector -->
       <div class="language-selector">
         <i class="fas fa-globe language-icon" id="language-toggle"></i>
@@ -54,153 +54,113 @@
       </div>
     </div>
   </div>
-   <!-- Overlay for Login Modal -->
-   <div id="login-overlay" class="overlay">
-    <div class="login-modal">
-      <button class="close-btn" id="close-btn">&times;</button>
-      <h2>Welcome to One3Learn!</h2>
-      <p>By logging in or creating an account, you agree to One3Learn's <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></p>
-      <form action="#">
-        <div class="input-group">
-          <input type="email" id="email" placeholder="Email" required>
+
+  
+  
+        <!-- Team Section -->
+        <div class="team">
+            <div class="member">
+                <img src="image/1.jpg" alt="Vy">
+                <h3>Vy - Product Lead</h3>
+        <p>ID: 23130393<br>Oversees project goals and timelines.</p>
+        <div class="social-icons">
+            <div class="social-icons">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=23130393@st.hcmuaf.edu.vn" target="_blank">
+                    <i class="fa fa-envelope"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/vy-id" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://vythanhngo.github.io/hci2024/home" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+            
+                </div>
+            </div>
+            <div class="member">
+                <img src="image/2.jpg" alt="Ngân">
+                <h3>Ngan - UI/UX Designer</h3>
+                <p>ID: 23130204<br>Designs user-friendly interfaces and experiences.</p>
+                <div class="social-icons">
+                    <div class="social-icons">
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=23130204@st.hcmuaf.edu.vn" target="_blank">
+                            <i class="fa fa-envelope"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ngan-id" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://ctkngan835.github.io/23130204_CaoThiKimNgan/" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="member">
+                <img src="image/3.jpg" alt="Trâm">
+                <h3>Tram - Educational Specialist</h3>
+                <p>ID: 23130340<br>Develops interactive learning content.</p>
+                <div class="social-icons">
+                    <div class="social-icons">
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=23130340@st.hcmuaf.edu.vn" target="_blank">
+                            <i class="fa fa-envelope"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/tram-id" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://tranthimytram23130340.github.io/hci-2024/" target="_blank"><i class="fab fa-github"></i></a>                    
+                    </div>
+                </div>
+            </div>
+            <div class="member">
+                <img src="image/4.jpg" alt="Vy">
+                <h3>Tien - Front-End Developer</h3>
+                <p>ID: 23130328<br>Builds pages and user-facing features.</p>
+                <div class="social-icons">
+                    <div class="social-icons">
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=23130328@st.hcmuaf.edu.vn" target="_blank">
+                            <i class="fa fa-envelope"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/tien-id" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://phanthaotien.github.io/23130328_PhanThaoTien/" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="member">
+                <img src="image/5.jpg" alt="Tuyen">
+                <h3>Tuyen - Back-End Engineer</h3>
+                <p>ID: 23130377<br>Manages databases and server functionality.</p>
+                <div class="social-icons">
+                    <div class="social-icons">
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=23130377@st.hcmuaf.edu.vn" target="_blank">
+                            <i class="fa fa-envelope"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/tuyen-id" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://kimtuyen-earth.github.io/junejune/" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                    
+                </div>
+            </div>
         </div>
-        <div class="input-group">
-          <input type="password" id="password" placeholder="Password" required>
-        </div>
-
-        <div class="remember">
-          <label><input type="checkbox"> Keep me logged in</label>
-          <a href="#" id="forgot-password-link">Forgot password?</a>
-        </div>
-
-        <button type="submit" class="login-btn">Log in</button>
-      </form>
-
-      <div class="signup">
-        <p>No account yet? <a href="javascript:void(0);" id="signup-link">Sign up</a></p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Overlay for Sign Up Modal -->
-  <div id="signup-overlay" class="overlay">
-    <div class="login-modal">
-      <button class="close-btn" id="close-signup-btn">&times;</button>
-      <h2>Create an Account</h2>
-      <p>By creating an account, you agree to One3Learn's <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></p>
-
-      <!-- Sign-Up Form -->
-      <form id="signup-form" action="#">
-        <div class="input-group">
-          <input type="email" id="email-signup" placeholder="Email" required>
-        </div>
-        <div class="input-group">
-          <input type="password" id="password-signup" placeholder="Password" required>
-        </div>
-        <div class="input-group">
-          <input type="password" id="confirm-password" placeholder="Confirm Password" required>
-        </div>
-
-        <button type="submit" class="signup-btn">Sign Up</button>
-      </form>
-
-      <div class="login">
-        <p>Already have an account? <a href="javascript:void(0);" id="login-link">Log in</a></p>
-      </div>
-    </div>
-  </div>
-<!-- Forgot Password Modal -->
-<div id="forgot-password-overlay" class="overlay">
-  <div class="forgot-password-modal">
-    <button class="close-btn" id="close-forgot-password-btn">&times;</button>
-    <h2>Forgot Password</h2>
-    <p>Enter your email address below to receive instructions on how to reset your password.</p>
-    <form id="forgot-password-form">
-      <input type="email" id="forgot-email" placeholder="Email" required>
-      <button type="submit" class="forgot-password-btn">Reset Password</button>
-    </form>
-    <div class="login">
-      <p>Remember your password? <a href="javascript:void(0);" id="login-link">Log in</a></p>
-    </div>
-  </div>
-</div>
-
-
-
-</div>
-  <class="hero-section">
-    <div class="hero-content">
-        <h1>Unlock Your Language Potential</h1>
-        <ul class="custom-list">
-            <li>
-                <img src="image/icon.jpg" alt="icon" class="list-icon">
-                Personalized lessons tailored to your learning goals
-            </li>
-            <li>
-                <img src="image/icon.jpg" alt="icon" class="list-icon">
-                Track your progress with real-time feedback
-            </li>
-            <li>
-                <img src="image/icon.jpg" alt="icon" class="list-icon">
-                Join a global community of motivated learners
-            </li>
-          </ul>
-          <button class="btn-start-now">Start Now</button>
-        </div>
-    <div class="hero-images">
-      <div class="image-wrapper">
-        <img src="image/anh.png" alt="Student 2" class="image2">
-      </div>
-    </div>
-  <section class="offer-section">
-    <h2 class="offer-title">See what One3Learn offers</h2>
-    <div class="offer-container">
-      <div class="offer-item">
-        <img src="image/of1.png" alt="Progress Tracker" class="offer-icon">
-        <h3>Progress Tracker</h3>
-        <p>Monitor your progress, see how much you’ve improved, and stay motivated throughout your learning journey.</p>
-        <a href="#" class="offer-link">Find my course &gt;</a>
-      </div>
-      <div class="offer-item">
-        <img src="image/of2.png" alt="Quizzes & Feedback" class="offer-icon">
-              <h3>Quizzes & Feedback</h3>
-        <p>Complete automated tests, get detailed feedback to improve your knowledge and continue developing.</p>
-        <a href="#" class="offer-link">Start the quiz &gt;</a>
-      </div>
-      <div class="offer-item">
-        <img src="image/33.jpg" alt="Learning Community" class="offer-icon">
-        <h3>Learning Community</h3>
-        <p>Connect with a global community of learners, ask questions, and receive support to enhance your learning experience.</p>
-        <a href="#" class="offer-link">Join the community &gt;</a>
-      </div>
-    </div>
-  </section>
-  <footer class="footer">
-    <div class="footer-content">
-        <!-- Legal Information Section (Bên trái) -->
-        <div class="legal-info">
-            <p>© 2024 Hootsuite Inc. All Rights Reserved.</p>
-            <a href="#">Legal Center</a> | <a href="#">Trust Center</a> | <a href="#">Privacy</a> | 
-            <a href="#">Cookie preferences</a> | <a href="#">Accessibility</a>
-        </div>
-        
-        <!-- Social Media Links (Bên phải) -->
-        <div class="social-media">
-            <a href="https://www.instagram.com/" target="_blank" class="social-icon">
-                <i class="fab fa-instagram"></i> <!-- Instagram Icon -->
-            </a>
-            <a href="https://www.facebook.com/" target="_blank" class="social-icon">
-                <i class="fab fa-facebook"></i> <!-- Facebook Icon -->
-            </a>
-            <a href="https://www.linkedin.com/" target="_blank" class="social-icon">
-                <i class="fab fa-linkedin"></i> <!-- LinkedIn Icon -->
-            </a>
-            <a href="mailto:example@mail.com" target="_blank" class="social-icon">
-                <i class="fas fa-envelope"></i> <!-- Email Icon -->
-            </a>
-        </div>
-    </div>
-</footer>
+      
+        <footer class="footer">
+            <div class="footer-content">
+                <!-- Legal Information Section (Bên trái) -->
+                <div class="legal-info">
+                    <p>© 2024 Hootsuite Inc. All Rights Reserved.</p>
+                    <a href="#">Legal Center</a> | <a href="#">Trust Center</a> | <a href="#">Privacy</a> | 
+                    <a href="#">Cookie preferences</a> | <a href="#">Accessibility</a>
+                </div>
+                
+                <!-- Social Media Links (Bên phải) -->
+                <div class="social-media">
+                    <a href="https://www.instagram.com/" target="_blank" class="social-icon">
+                        <i class="fab fa-instagram"></i> <!-- Instagram Icon -->
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank" class="social-icon">
+                        <i class="fab fa-facebook"></i> <!-- Facebook Icon -->
+                    </a>
+                    <a href="https://www.linkedin.com/" target="_blank" class="social-icon">
+                        <i class="fab fa-linkedin"></i> <!-- LinkedIn Icon -->
+                    </a>
+                    <a href="mailto:example@mail.com" target="_blank" class="social-icon">
+                        <i class="fas fa-envelope"></i> <!-- Email Icon -->
+                    </a>
+                </div>
+            </div>
+        </footer>
  <script src="index.js"></script>
 </body>
 </html>

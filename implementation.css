@@ -93,20 +93,11 @@
   }
   
   .nav-right .log-in {
-    color: #0073e6; /* Màu riêng cho nút Log in */
-  }
-  
-  .nav-right .sign-up {
-    color: #28a745; /* Màu riêng cho nút Sign up */
-    font-weight: bold; /* Làm nổi bật */
+    color: var(--primary-color);
   }
   
   .nav-right .log-in:hover {
-    color: #005bb5; /* Màu hover cho Log in */
-  }
-  
-  .nav-right .sign-up:hover {
-    color: #1c7c31; /* Màu hover cho Sign up */
+    color: #cc3e36; /* Màu tối hơn của primary */
   }
   
   

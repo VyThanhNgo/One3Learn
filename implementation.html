@@ -17,13 +17,12 @@
           <img src="image/logo2.png" alt="Logo">
         </a>
       </div>
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="requirement.html">Requirement</a>
-      <a href="design.html">Design</a>
-      <a href="implementation.html">Implementation</a>
+      <a href="courses.html">Course Management</a>
+      <a href="study.html">Study Notes</a>
+      <a href="progress.html">Track Progress</a>
+      <a href="test.html">Tests</a>
+      <a href="community.html">Community</a>
     </div>
-    
     <div class="nav-right">
       <a href="#contact">Contact</a>
       <a href="#login" class="log-in" id="login-link">Log In</a>
@@ -54,17 +53,85 @@
   </div>
 
 
-  
+  <!-- Overlay for Login Modal -->
+  <div id="login-overlay" class="overlay">
+    <div class="login-modal">
+      <button class="close-btn" id="close-btn">&times;</button>
+      <h2>Welcome to One3Learn!</h2>
+      <p>By logging in or creating an account, you agree to One3Learn's <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></p>
+      <form action="#">
+        <div class="input-group">
+          <input type="email" id="email" placeholder="Email" required>
+        </div>
+        <div class="input-group">
+          <input type="password" id="password" placeholder="Password" required>
+        </div>
 
+        <div class="remember">
+          <label><input type="checkbox"> Keep me logged in</label>
+          <a href="#" id="forgot-password-link">Forgot password?</a>
+        </div>
+
+        <button type="submit" class="login-btn">Log in</button>
+      </form>
+
+      <div class="signup">
+        <p>No account yet? <a href="javascript:void(0);" id="signup-link">Sign up</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Overlay for Sign Up Modal -->
+  <div id="signup-overlay" class="overlay">
+    <div class="login-modal">
+      <button class="close-btn" id="close-signup-btn">&times;</button>
+      <h2>Create an Account</h2>
+      <p>By creating an account, you agree to One3Learn's <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></p>
+
+      <!-- Sign-Up Form -->
+      <form id="signup-form" action="#">
+        <div class="input-group">
+          <input type="email" id="email-signup" placeholder="Email" required>
+        </div>
+        <div class="input-group">
+          <input type="password" id="password-signup" placeholder="Password" required>
+        </div>
+        <div class="input-group">
+          <input type="password" id="confirm-password" placeholder="Confirm Password" required>
+        </div>
+
+        <button type="submit" class="signup-btn">Sign Up</button>
+      </form>
+
+      <div class="login">
+        <p>Already have an account? <a href="javascript:void(0);" id="login-link">Log in</a></p>
+      </div>
+    </div>
+  </div>
+<!-- Forgot Password Modal -->
+<div id="forgot-password-overlay" class="overlay">
+  <div class="forgot-password-modal">
+    <button class="close-btn" id="close-forgot-password-btn">&times;</button>
+    <h2>Forgot Password</h2>
+    <p>Enter your email address below to receive instructions on how to reset your password.</p>
+    <form id="forgot-password-form">
+      <input type="email" id="forgot-email" placeholder="Email" required>
+      <button type="submit" class="forgot-password-btn">Reset Password</button>
+    </form>
+    <div class="login">
+      <p>Remember your password? <a href="javascript:void(0);" id="forgot-login-link">Log in</a></p>
+    </div>
+  </div>
+</div>
+</div>
   <!-- Footer Section -->
   <footer class="footer">
     <div class="footer-content">
       <div class="legal-info">
         <p>© 2024 Hootsuite Inc. All Rights Reserved.</p>
-        <a href="#">Legal Center</a> | <a href="#">Trust Center</a> | <a href="#">Privacy</a> | 
+        <a href="#">Legal Center</a> | <a href="#">Trust Center</a> | <a href="#">Privacy</a> |
         <a href="#">Cookie preferences</a> | <a href="#">Accessibility</a>
       </div>
-      
       <div class="social-media">
         <a href="https://www.instagram.com/" target="_blank" class="social-icon">
           <i class="fab fa-instagram"></i>
@@ -82,8 +149,6 @@
     </div>
   </footer>
 
-  <script src="implementation.js"></script>
   <script src="index.js"></script>
-
 </body>
 </html>

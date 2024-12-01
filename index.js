@@ -51,3 +51,15 @@ window.onload = function () {
     document.getElementById('login-overlay').style.display = 'none';
     document.getElementById('forgot-password-overlay').style.display = 'none';
 };
+// Chuyển từ Forgot Password về Login khi nhấn vào "Log in"
+document.getElementById('forgot-login-link').addEventListener('click', function () {
+    document.getElementById('forgot-password-overlay').style.display = 'none'; // Ẩn Forgot Password modal
+    document.getElementById('login-overlay').style.display = 'block'; // Hiển thị Login modal
+});
+document.getElementById('login-link').addEventListener('click', function () {
+    document.getElementById('login-overlay').classList.add('show');
+});
+
+document.getElementById('close-btn').addEventListener('click', function () {
+    document.getElementById('login-overlay').classList.remove('show');
+});

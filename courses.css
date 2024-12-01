@@ -68,7 +68,7 @@ body {
 }
 
 .nav-left a {
-  color: var(--secondary-color); /* Màu chữ mặc định */
+  color: var(--text-color); /* Màu chữ mặc định */
   text-decoration: none; /* Loại bỏ gạch dưới */
   font-size: 16px; /* Kích thước chữ */
   font-weight: 600; /* Đậm hơn một chút */
@@ -87,7 +87,7 @@ body {
 }
 
 .nav-right a {
-  color: var(--secondary-color); /* Màu chữ mặc định */
+  color: var(--text-color); /* Màu chữ mặc định */
   text-decoration: none; /* Loại bỏ gạch dưới */
   font-size: 16px; /* Kích thước chữ */
   font-weight: 600; /* Đậm hơn một chút */
@@ -99,7 +99,7 @@ body {
 }
 
 .nav-right .log-in {
-    color: var(--secondary-color);
+    color: var(--text-color);
   }
   
   .nav-right .log-in:hover {

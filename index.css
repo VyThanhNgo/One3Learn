@@ -89,7 +89,7 @@ body {
 }
 
 .nav-right .log-in {
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .nav-right .log-in:hover {
@@ -460,7 +460,7 @@ body {
       .login-btn, .signup-btn {
         width: 100%;
         padding: 12px;
-        background-color: #FF6B6B;
+        background-color: var(--secondary-color); /* Màu chữ mặc định */
         border: none;
         color: white;
         border-radius: 5px;
@@ -470,7 +470,7 @@ body {
       }
 
       .login-btn:hover, .signup-btn:hover {
-        background-color: #FF4F4F;
+        background-color: var(--primary-color);
       }
 
       .signup p {
@@ -576,6 +576,7 @@ body {
       cursor: pointer;
       margin-top: 20px;
     }
+    
 
     .login-btn:hover, .signup-btn:hover {
       background-color: #FF4F4F;

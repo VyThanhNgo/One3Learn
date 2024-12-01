@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Language Course Management</title>
+  <link rel="stylesheet" href="study.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="icon" href="image/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <!-- Header Section -->
+  <div class="header">
+    <div class="nav-left">
+      <div class="logo">
+        <a href="index.html">
+          <img src="image/logo2.png" alt="Logo">
+        </a>
+      </div>
+      <a href="courses.html">Course Management	</a>
+      <a href="study.html">Study Notes</a>
+      <a href="progress.html">Track Progress</a>
+      <a href="test.html">Tests</a>
+      <a href="community.html">Community	</a>
+    </div>
+
+    <div class="nav-right">
+      <a href="#contact">Contact</a>
+      <a href="#login" class="log-in" id="login-link">Log In</a>
+      <!-- Language Selector -->
+      <div class="language-selector">
+        <i class="fas fa-globe language-icon" id="language-toggle"></i>
+        <div class="dropdown-content">
+          <a href="#" data-lang="en">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg" alt="English" class="flag-icon"> English
+          </a>
+          <a href="#" data-lang="vi">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg" alt="Vietnamese" class="flag-icon"> Vietnamese
+          </a>
+          <a href="#" data-lang="es">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_Spain.svg" alt="Spanish" class="flag-icon"> Spanish
+          </a>
+          <a href="#" data-lang="fr">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg" alt="French" class="flag-icon"> French
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Phần nội dung chính -->
+<div class="container">
+    <!-- Tabs điều hướng -->
+    <div class="tabs">
+        <button class="tab-button active" onclick="openTab(event, 'noteTab')">Notes Space</button>
+        <button class="tab-button" onclick="openTab(event, 'flashcardTab')">Create a new Flashcard</button>
+    </div>
+
+    <!-- Tab Không gian ghi chú -->
+    <div id="noteTab" class="tab-content">
+        <div class="note-section">
+            <h2>Notes Space</h2>
+            <form id="note-form">
+                <label for="topic"></label>
+                <input type="text" id="topic" name="topic" placeholder="Topic" required>
+
+                <label for="content"></label>
+                <textarea id="content" name="content" rows="8" placeholder="Enter vocabulary, grammatical structure, or important points..." required></textarea>
+
+                <button type="submit">Save Notes</button>
+            </form>
+
+            <!-- Thông báo đã lưu -->
+            <p id="save-message" class="hidden">Notes saved!</p>
+        </div>
+
+        <!-- Danh sách ghi chú đã lưu -->
+        <div class="saved-notes">
+            <h2>Saved Notes</h2>
+            <ul id="notes-list">
+                <!-- Các ghi chú đã lưu sẽ được hiển thị ở đây -->
+            </ul>
+        </div>
+    </div>
+
+    <!-- Tab Tạo Flashcard -->
+    <div id="flashcardTab" class="tab-content" style="display:none">
+        <div class="flashcard-section">
+            <h2>Create a new Flashcard</h2>
+            <form id="flashcard-form">
+                <label for="english-word"></label>
+                <input type="text" id="english-word" name="english-word" placeholder="english-word" required>
+
+                <label for="vietnamese-meaning"></label>
+                <input type="text" id="vietnamese-meaning" name="vietnamese-meaning" placeholder="vietnamese-meaning" required>
+
+                <button type="submit">Save Flashcard</button>
+            </form>
+
+            <!-- Thông báo đã lưu Flashcard -->
+            <p id="flashcard-save-message" class="hidden">Flashcard saved!</p>
+        </div>
+
+        <!-- Danh sách Flashcard đã lưu -->
+        <div class="saved-flashcards">
+            <h2>Saved Flashcards</h2>
+            <ul id="flashcard-list">
+                <!-- Các flashcard đã lưu sẽ được hiển thị ở đây -->
+            </ul>
+        </div>
+    </div>
+</div>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="legal-info">
+        <p>© 2024 Hootsuite Inc. All Rights Reserved.</p>
+        <a href="#">Legal Center</a> | <a href="#">Trust Center</a> | <a href="#">Privacy</a> | 
+        <a href="#">Cookie preferences</a> | <a href="#">Accessibility</a>
+      </div>
+      <div class="social-media">
+        <a href="https://www.instagram.com/" target="_blank" class="social-icon">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/" target="_blank" class="social-icon">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://www.linkedin.com/" target="_blank" class="social-icon">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:example@mail.com" target="_blank" class="social-icon">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="study.js"></script>
+
+</body>
+</html>

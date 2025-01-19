@@ -1,47 +1,34 @@
 document.addEventListener("DOMContentLoaded", function() {
-  const navLinks = document.querySelectorAll('.nav-right a'); // Tất cả các liên kết trong menu
-  const offerLinks = document.querySelectorAll('.offer-link'); // Các liên kết trong các mục offer-item
+  const navLinks = document.querySelectorAll('.nav-right a'); // Tất cả liên kết trong menu điều hướng
 
-  // Lấy giá trị tab đang được chọn từ localStorage
-  const savedActiveTab = localStorage.getItem('activeTab');
-  if (savedActiveTab) {
-    const activeLink = document.querySelector(`.nav-right a[href="${savedActiveTab}"]`);
-    if (activeLink) {
-      activeLink.classList.add('active');
+  // Lấy đường dẫn của trang hiện tại
+  const currentPath = window.location.pathname.split('/').pop(); // Lấy tên file HTML hiện tại
+
+  // Thêm lớp 'active' vào liên kết tương ứng
+  navLinks.forEach(link => {
+    const linkPath = link.getAttribute('href'); // Lấy đường dẫn từ href của liên kết
+    if (linkPath === currentPath) {
+      link.classList.add('active'); // Thêm lớp 'active' nếu khớp
+    } else {
+      link.classList.remove('active'); // Loại bỏ lớp 'active' nếu không khớp
     }
-  } else {
-    // Nếu không có tab đã lưu, mặc định chọn Home
-    document.querySelector('.nav-right a[href="index.html"]').classList.add('active');
-  }
-
-  // Sự kiện khi nhấn vào các offer-link
-  offerLinks.forEach(link => {
-    link.addEventListener('click', function() {
-      // Loại bỏ lớp 'active' khỏi tất cả các tab
-      navLinks.forEach(link => link.classList.remove('active'));
-
-      // Thêm lớp 'active' vào tab tương ứng
-      const tabLink = document.querySelector(`.nav-right a[href="${this.getAttribute('href')}"]`);
-      tabLink.classList.add('active');
-
-      // Lưu lại tab đã chọn vào localStorage
-      localStorage.setItem('activeTab', this.getAttribute('href'));
-    });
   });
 
-  // Sự kiện khi nhấn vào bất kỳ tab nào trong menu
+  // Xử lý sự kiện nhấn vào các liên kết
   navLinks.forEach(link => {
-    link.addEventListener('click', function() {
-      // Loại bỏ lớp 'active' khỏi tất cả các tab
-      navLinks.forEach(link => link.classList.remove('active'));
+    link.addEventListener('click', function(event) {
+      // Loại bỏ 'active' khỏi tất cả các liên kết
+      navLinks.forEach(nav => nav.classList.remove('active'));
 
-      // Thêm lớp 'active' vào tab được chọn
+      // Thêm 'active' vào liên kết vừa được nhấn
       this.classList.add('active');
 
-      // Lưu lại tab đã chọn vào localStorage
+      // Lưu tab đang mở vào localStorage
       localStorage.setItem('activeTab', this.getAttribute('href'));
     });
   });
+});
+
 
   // Mở modal đăng nhập
   document.getElementById('login-btn').addEventListener('click', function () {
@@ -119,4 +106,3 @@ document.addEventListener("DOMContentLoaded", function() {
   } else {
     console.error('Hamburger button or navigation menu not found!');
   }
-});
